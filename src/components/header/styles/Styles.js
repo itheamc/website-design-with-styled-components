@@ -33,11 +33,12 @@ export const UnorderList = styled.ul`
         display: flex;
         position: absolute;
         flex-direction: column;
-        background-color: blueviolet;
         justify-content: center;
         align-content: center;
         padding-top: 16px;
         overflow-x: hidden;
+        z-index: 1;
+        background-color: #052339;
         left: ${({click}) => (click ? 0 : '-100%')};
         opacity: 1;
         transition: all 0.5s ease;
@@ -108,7 +109,7 @@ export const CloseIcon = styled(FaTimes)`
         /* background-color: red; */
         margin-right: 24px;
         font-size: 14px;
-        z-index: 1;
+        z-index: 2;
         opacity: 1;
         transition: all 0.7s ease;
     }
