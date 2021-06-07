@@ -8,7 +8,7 @@ export const Footer = styled.footer`
     color: #eee;
     line-height: 64px;
     padding: 0 32px;
-    display: block;
+    display: flex;
     position: relative;
     bottom: 0;
 `
@@ -37,14 +37,19 @@ export const FooterLinkDiv = styled.div`
     @media (max-width: 1280px) {
         justify-content: center;
     }
+
+    @media (max-width: 410px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 `
 
 export const FooterLink = styled(Link)`
     height: auto;
-    padding: 8px 16px;
+    padding: 4px 16px;
     margin: 0 8px;
     color: white;
-    display: inline;
+    display: inline-flex;
     position: relative;
     text-decoration: none;
 
